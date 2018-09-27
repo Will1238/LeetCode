@@ -1,0 +1,39 @@
+class MinStack {
+
+    /** initialize your data structure here. */
+    ArrayList<Integer> stackMin;
+    public MinStack() {
+        stackMin = new ArrayList<Integer>();
+    }
+    
+    public void push(int x) {
+        stackMin.add(x);
+    }
+    
+    public void pop() {
+        stackMin.remove(stackMin.size()-1);
+    }
+    
+    public int top() {
+        return stackMin.get(stackMin.size()-1);
+    }
+    
+    public int getMin() {
+        int Min = stackMin.get(0);
+        for(int i=0; i<stackMin.size(); i++) {
+            if(stackMin.get(i) < Min){
+                Min = stackMin.get(i);
+            }
+        }
+        return Min;
+    }
+}
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(x);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.getMin();
+ */
