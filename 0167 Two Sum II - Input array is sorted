@@ -1,0 +1,51 @@
+/*
+分析：
+1.找到最大的小于target的数的索引a
+2.令x=target-num[a]
+3.找到最大的小于x的数的索引b
+4.从b开始向左索引寻找num[a]+num[b]=target的b
+5.不存在这样的b则a--,回到第2步，存在则返回a和b
+*/
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int[] maxIndex = new int[2];
+        maxIndex[1] = 0;
+        for (int i=0; i<numbers.length; i++) {
+            if(numbers[i]>target) {
+                maxIndex[1] = i-1;
+                break;
+            }
+        }
+        if (maxIndex[1] == 0) {
+            maxIndex[1] = numbers.length-1;
+        }
+
+        while(maxIndex[1] >= 1){
+            int x = target - numbers[maxIndex[1]];
+            maxIndex[0] = -1;
+            for (int i=0; i<=maxIndex[1]; i++) {
+                if (numbers[i] > x) {
+                    maxIndex[0] = i-1;
+                    break;
+                } else if(numbers[i] == x) {
+                    maxIndex[0] = i;
+                    maxIndex[0]++;
+                    maxIndex[1]++;
+                    return maxIndex;
+                }
+            }
+            if(maxIndex[0] != -1) {
+                while(maxIndex[0] >= 0) {
+                    if(numbers[maxIndex[0]] + numbers[maxIndex[1]] == target) {
+                        maxIndex[0]++;
+                        maxIndex[1]++;
+                        return maxIndex;
+                    }
+                    maxIndex[0]--;
+                }
+            }
+            maxIndex[1]--;
+        }
+        return maxIndex;
+    }
+}
