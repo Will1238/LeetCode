@@ -1,0 +1,43 @@
+/*
+分析：
+1.双指针，两个指针分别从headA和headB指针开始遍历，当遍历完当前链表即遍历另一条链表，则两指针（引用）相等时为相交节点。
+2.补全，将两条链表扩充为长度相等，然后分别从头开始遍历，相等时即相交节点。
+*/
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        if((headA == null && headB !=null) || (headA != null && headB == null)){
+            return null;
+        }
+        ListNode flagA = headA, flagB = headB;
+        int A = 0, B = 0;
+        while(A<2 && B<2){
+            if(flagA == flagB){
+                return flagA;
+            }
+            if(flagA == null){
+                flagA = headB;
+                A++;
+            } else {
+                flagA = flagA.next;
+            }
+            if(flagB == null){
+                flagB = headA;
+                B++;
+            } else{
+                flagB = flagB.next;
+            }   
+        }
+        return null;
+    }
+}
