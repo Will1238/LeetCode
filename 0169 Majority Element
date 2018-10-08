@@ -1,0 +1,32 @@
+class Solution {
+    public int majorityElement(int[] nums) {
+        ArrayList<Integer> visitedNums = new ArrayList<Integer>(); 
+        final int n = nums.length;
+        int number = 0;
+        for(int j=0; j<nums.length; j++) {
+            number = 1;
+            boolean flag = false;
+            for (int k=0; k<visitedNums.size(); k++) {
+                if(nums[j] == visitedNums.get(k).intValue()) {
+                    flag = true;
+                    break;
+                }
+            }
+            if(flag == true) {
+                continue;
+            }
+            final int x = nums[j];
+            visitedNums.add(x);
+            for(int i=j+1; i<nums.length; i++){
+                if (nums[i] == x) {
+                    number++;    
+                }
+            }
+            if (number > n/2) {
+                return x;
+            }
+        }
+        
+        return 0;
+    }
+}
