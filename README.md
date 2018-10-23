@@ -9,3 +9,4 @@
 <a href="./0189 Rotate Array">0189 Rotate Array</a><br>
 <a href="./0191 Number of 1 Bits">0191 Number of 1 Bits</a><br>
 <a href="./0203 Remove Linked List Elements">0203 Remove Linked List Elements</a><br>
+<a href="./0204 Count Primes">0204 Count Primes</a><br>
