@@ -1,0 +1,17 @@
+class Solution:
+    def isIsomorphic(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        a = [0 for i in range(256)]
+        b = [0 for i in range(256)]
+
+        for i in range(len(s)):
+            if a[ord(s[i])] != b[ord(t[i])]:
+                return False
+            a[ord(s[i])] = i+1
+            b[ord(t[i])] = i+1
+
+        return True
