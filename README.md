@@ -11,3 +11,4 @@
 <a href="./0203 Remove Linked List Elements">0203 Remove Linked List Elements</a><br>
 <a href="./0204 Count Primes">0204 Count Primes</a><br>
 <a href="./0205 Isomorphic Strings">0205 Isomorphic Strings</a><br>
+<a href="./0205 Isomorphic Strings [With Python]">0205 Isomorphic Strings [With Python]</a><br>
