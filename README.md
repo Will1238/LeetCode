@@ -12,3 +12,4 @@
 <a href="./0204 Count Primes">0204 Count Primes</a><br>
 <a href="./0205 Isomorphic Strings">0205 Isomorphic Strings</a><br>
 <a href="./0205 Isomorphic Strings [With Python]">0205 Isomorphic Strings [With Python]</a><br>
+<a href="./0206 Reverse Linked List">0206 Reverse Linked List</a><br>
