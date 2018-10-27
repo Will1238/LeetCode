@@ -15,4 +15,6 @@
 <a href="./0206 Reverse Linked List">0206 Reverse Linked List</a><br>
 <a href="./0217 Contains Duplicate">0217 Contains Duplicate</a><br>
 <a href="./0219 Contains Duplicate II">0219 Contains Duplicate II</a><br>
+<a href="./0225 Implement Stack using Queues">0225 Implement Stack using Queues</a><br>
+<a href="./"></a><br>
 <a href="./"></a><br>
