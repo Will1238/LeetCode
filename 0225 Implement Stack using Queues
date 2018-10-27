@@ -1,0 +1,51 @@
+//执行用时: 78 ms, 在Implement Stack using Queues的Java提交中击败了83.05% 的用户
+
+class MyStack {
+    Queue<Integer> myqueue;
+    
+    /** Initialize your data structure here. */
+    public MyStack() {
+        myqueue = new LinkedList<Integer>();
+    }
+    
+    /** Push element x onto stack. */
+    public void push(int x) {
+        myqueue.add(x);
+    }
+    
+    /** Removes the element on top of the stack and returns that element. */
+    public int pop() {
+        Queue<Integer> temp = myqueue;
+        myqueue = new LinkedList<Integer>();
+        while (temp.size() != 1) {
+            myqueue.add(temp.remove());
+        }
+        return temp.remove().intValue();
+    }
+    
+    /** Get the top element. */
+    public int top() {
+        Queue<Integer> temp = myqueue;
+        myqueue = new LinkedList<Integer>();
+        while (temp.size() != 1) {
+            myqueue.add(temp.remove());
+        }
+        int x = temp.remove().intValue();
+        myqueue.add(x);
+        return x;
+    }
+    
+    /** Returns whether the stack is empty. */
+    public boolean empty() {
+        return myqueue.isEmpty();
+    }
+}
+
+/**
+ * Your MyStack object will be instantiated and called as such:
+ * MyStack obj = new MyStack();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.top();
+ * boolean param_4 = obj.empty();
+ */
