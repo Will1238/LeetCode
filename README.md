@@ -17,5 +17,6 @@
 <a href="./0219 Contains Duplicate II">0219 Contains Duplicate II</a><br>
 <a href="./0225 Implement Stack using Queues">0225 Implement Stack using Queues</a><br>
 <a href="./0226 Invert Binary Tree">0226 Invert Binary Tree</a><br>
+<a href="./0231 Power of Two">0231 Power of Two</a><br>
 <a href="./"></a><br>
 <a href="./"></a><br>
