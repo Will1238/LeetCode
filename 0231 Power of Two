@@ -1,0 +1,20 @@
+//执行用时: 5 ms, 在Power of Two的Java提交中击败了41.44% 的用户
+
+class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if (n == 1) {
+            return true;
+        }
+        if (n % 2 == 1 || n <= 0) {
+            return false;
+        }
+        while (n > 2) {
+            if (n % 2 == 1) {
+                return false;
+            } else {
+                n /= 2;
+            }
+        }
+        return true;
+    }
+}
