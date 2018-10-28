@@ -18,5 +18,6 @@
 <a href="./0225 Implement Stack using Queues">0225 Implement Stack using Queues</a><br>
 <a href="./0226 Invert Binary Tree">0226 Invert Binary Tree</a><br>
 <a href="./0231 Power of Two">0231 Power of Two</a><br>
+<a href="./0232 Implement Queue using Stacks">0232 Implement Queue using Stacks</a><br>
 <a href="./"></a><br>
 <a href="./"></a><br>
