@@ -1,4 +1,8 @@
 # LeetCode
+
+## Algorithm Part
+
+### Algorithm && Simple
 <a href="./0136 Single Number">0136 Single Number</a><br>
 <a href="./0141 Linked List Cycle">0141 Linked List Cycle</a><br>
 <a href="./0151 Min Stack">0151 Min Stack</a><br>
@@ -22,5 +26,10 @@
 <a href="./0234 Palindrome Linked List">0234 Palindrome Linked List</a><br>
 <a href="./0235 Lowest Common Ancestor of a Binary Search Tree">0235 Lowest Common Ancestor of a Binary Search Tree</a><br>
 <a href="./0237 Delete Node in a Linked List">0237 Delete Node in a Linked List</a><br>
+<a href="./"></a><br>
+<a href="./"></a><br>
+
+
+### Algorithm && Middle
 <a href="./"></a><br>
 <a href="./"></a><br>
