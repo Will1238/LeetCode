@@ -1,13 +1,13 @@
 # LeetCode
-## Content
 
-<a href="#Algorithm">Algorithm Part</a><br>
-<a href="#ASimple">Algorithm &amp;&amp; Simple</a><br>
-<a href="#AMiddle">Algorithm &amp;&amp; Middle</a><br>
+# Content
+## Algorithm Part
+<a href="#ASimple">Algorithm &amp;&amp; Simple </a><br>
+<a href="#AMiddle">Algorithm &amp;&amp; Middle </a><br>
 
 
-## Algorithm Part <a name="Algorithm"></a>
-### Algorithm && Simple <a name="ASimple"></a>
+# Algorithm Part
+### <span id="ASimple">Algorithm && Simple </span>
 <a href="./Algorithm/Simple/0136 Single Number">0136 Single Number</a><br>
 <a href="./Algorithm/Simple/0141 Linked List Cycle">0141 Linked List Cycle</a><br>
 <a href="./Algorithm/Simple/0151 Min Stack">0151 Min Stack</a><br>
@@ -34,7 +34,7 @@
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
-### Algorithm && Middle <a name="AMiddle"></a>
+### <span id="AMiddle">Algorithm && Middle</span>
 <a href="./Algorithm/Middle/0002 Add Two Numbers">0002 Add Two Numbers</a><br>
 <a href="./Algorithm/Middle/"></a><br>
 <a href="./Algorithm/Middle/"></a><br>
