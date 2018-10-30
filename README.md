@@ -2,6 +2,7 @@
 
 # Content
 ## Algorithm Part
+[Algorithm &amp;&amp; Simple](#ASimple)
 <a href="#ASimple">Algorithm &amp;&amp; Simple </a><br>
 <a href="#AMiddle">Algorithm &amp;&amp; Middle </a><br>
 
