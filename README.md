@@ -3,8 +3,7 @@
 # Content
 ## Algorithm Part
 [Algorithm &amp;&amp; Simple](#asimple)<br>
-<a href="#ASimple">Algorithm &amp;&amp; Simple</a><br>
-<a href="#AMiddle">Algorithm &amp;&amp; Middle</a><br>
+[Algorithm &amp;&amp; Middle](#amiddle)<br>
 
 
 # Algorithm Part
@@ -35,7 +34,7 @@
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
-### <span id="AMiddle">Algorithm && Middle</span>
+### <span id="amiddle">Algorithm && Middle</span>
 <a href="./Algorithm/Middle/0002 Add Two Numbers">0002 Add Two Numbers</a><br>
 <a href="./Algorithm/Middle/"></a><br>
 <a href="./Algorithm/Middle/"></a><br>
