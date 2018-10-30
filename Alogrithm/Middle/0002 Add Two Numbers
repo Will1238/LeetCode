@@ -1,0 +1,75 @@
+//执行用时: 73 ms, 在Add Two Numbers的Java提交中击败了13.64% 的用户
+
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode p = l1;
+        ListNode q = l2;
+        ListNode ans = new ListNode(0);
+        ListNode flag = ans;
+        int temp = 0;
+        while (p != null && q != null) {
+            int x = p.val + q.val + temp;
+            if (x < 10) {
+                flag.next = new ListNode(x);
+                temp = 0;
+            } else {
+                flag.next = new ListNode(x % 10);
+                temp = 1;
+            }
+            flag = flag.next;
+            p = p.next;
+            q = q.next;
+        }
+        if (p == null && q == null) {
+            if( temp != 0) {
+                flag.next = new ListNode(temp);
+            }
+            ans = ans.next;
+            return ans;
+        }
+        if (p != null) {
+            while (p != null) {
+                int x = p.val + temp;
+                if (x < 10) {
+                    flag.next = new ListNode(x);
+                    temp = 0;
+                } else {
+                    flag.next = new ListNode(x % 10);
+                    temp = 1;
+                }
+                flag = flag.next;
+                p = p.next;
+            }
+            if( temp != 0) {
+                flag.next = new ListNode(temp);
+            }  
+        }
+        if (q != null) {
+            while (q != null) {
+                int x = q.val + temp;
+                if (x < 10) {
+                    flag.next = new ListNode(x);
+                    temp = 0;
+                } else {
+                    flag.next = new ListNode(x % 10);
+                    temp = 1;
+                }
+                flag = flag.next;
+                q = q.next;
+            }
+            if( temp != 0) {
+                flag.next = new ListNode(temp);
+            }   
+        }
+        ans = ans.next;
+        return ans;
+    }
+}
