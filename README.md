@@ -8,7 +8,7 @@
 
 
 # Algorithm Part
-### <span id="aSimple">Algorithm && Simple </span>
+### <span id="asimple">Algorithm && Simple </span>
 <a href="./Algorithm/Simple/0136 Single Number">0136 Single Number</a><br>
 <a href="./Algorithm/Simple/0141 Linked List Cycle">0141 Linked List Cycle</a><br>
 <a href="./Algorithm/Simple/0151 Min Stack">0151 Min Stack</a><br>
