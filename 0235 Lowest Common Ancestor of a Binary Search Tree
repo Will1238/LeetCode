@@ -1,0 +1,47 @@
+//执行用时: 10 ms, 在Lowest Common Ancestor of a Binary Search Tree的Java提交中击败了77.95% 的用户
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        ArrayList<Integer> pAncestors = new ArrayList<Integer>();
+        ArrayList<Integer> qAncestors = new ArrayList<Integer>();
+        findNode(root, p, pAncestors);
+        findNode(root, q, qAncestors);
+        for (int i = 0; i < pAncestors.size(); i++) {
+            if (qAncestors.contains(pAncestors.get(i))) {
+                return new TreeNode(pAncestors.get(i)); 
+            }
+        }
+        return null;
+    }
+    
+    public TreeNode findNode(TreeNode root, TreeNode x, ArrayList<Integer> ancestors) {
+        if (root == null) {
+            return null;
+        } 
+        if (root.val == x.val) {
+            ancestors.add(root.val);
+            return root;
+        } else {
+            TreeNode left = findNode(root.left, x, ancestors);
+            TreeNode right = findNode(root.right, x, ancestors);
+            if (left != null) {
+                ancestors.add(root.val);
+                return left;
+            }
+            if (right != null) {
+                ancestors.add(root.val);
+                return right;
+            }
+        }
+        return null;
+    }
+}
