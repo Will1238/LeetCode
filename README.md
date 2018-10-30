@@ -2,13 +2,13 @@
 
 # Content
 ## Algorithm Part
-[Algorithm &amp;&amp; Simple](#ASimple)
-<a href="#ASimple">Algorithm &amp;&amp; Simple </a><br>
-<a href="#AMiddle">Algorithm &amp;&amp; Middle </a><br>
+[Algorithm &amp;&amp; Simple](#asimple)<br>
+<a href="#ASimple">Algorithm &amp;&amp; Simple</a><br>
+<a href="#AMiddle">Algorithm &amp;&amp; Middle</a><br>
 
 
 # Algorithm Part
-### <span id="ASimple">Algorithm && Simple </span>
+### <span id="aSimple">Algorithm && Simple </span>
 <a href="./Algorithm/Simple/0136 Single Number">0136 Single Number</a><br>
 <a href="./Algorithm/Simple/0141 Linked List Cycle">0141 Linked List Cycle</a><br>
 <a href="./Algorithm/Simple/0151 Min Stack">0151 Min Stack</a><br>
