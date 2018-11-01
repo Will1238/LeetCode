@@ -1,0 +1,19 @@
+//执行用时: 6 ms, 在Add Digits的Java提交中击败了19.51% 的用户
+
+class Solution {
+    public int addDigits(int num) {
+        do{
+            num = splitAndMerge(num);
+        } while (num > 9);
+        return num;
+    }
+    
+    public int splitAndMerge(int num) {
+        int ans = 0;
+        while (num > 0) {
+            ans += num % 10;
+            num /= 10;
+        }
+        return ans;
+    }
+}
