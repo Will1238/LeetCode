@@ -1,0 +1,44 @@
+//执行用时: 51 ms, 在Binary Tree Paths的Java提交中击败了2.96% 的用户
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    List<String> paths = new ArrayList<String>();
+    public List<String> binaryTreePaths(TreeNode root) {
+        if (root == null) {
+            return paths;
+        }
+        String path = "";
+        transerval(root, path);
+        return paths;
+    }
+    
+    public void transerval(TreeNode root, String path) {
+        path += root.val;
+        if (root.left == null && root.right == null) {  //叶子
+            paths.add(path);
+            return;
+        } else if (root.left != null && root.right == null ) {
+            path += "->";
+            transerval(root.left, path);
+            return;
+        } else if (root.left == null && root.right != null) {
+            path += "->";
+            transerval(root.right, path);
+            return;
+        } else {
+            path += "->";
+            transerval(root.left, path);
+            transerval(root.right, path);
+            return;
+        }
+        
+    }
+}
