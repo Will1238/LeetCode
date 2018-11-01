@@ -32,8 +32,10 @@
 <a href="./Algorithm/Simple/0235 Lowest Common Ancestor of a Binary Search Tree">0235 Lowest Common Ancestor of a Binary Search Tree</a><br>
 <a href="./Algorithm/Simple/0237 Delete Node in a Linked List">0237 Delete Node in a Linked List</a><br>
 <a href="./Algorithm/Simple/0242 Valid Anagram">0242 Valid Anagram</a><br>
+<a href="./Algorithm/Simple/0257 Binary Tree Paths">0257 Binary Tree Paths</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
+
 
 ### <span id="amiddle">Algorithm && Middle</span>
 <a href="./Algorithm/Middle/0002 Add Two Numbers">0002 Add Two Numbers</a><br>
