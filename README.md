@@ -31,6 +31,7 @@
 <a href="./Algorithm/Simple/0234 Palindrome Linked List">0234 Palindrome Linked List</a><br>
 <a href="./Algorithm/Simple/0235 Lowest Common Ancestor of a Binary Search Tree">0235 Lowest Common Ancestor of a Binary Search Tree</a><br>
 <a href="./Algorithm/Simple/0237 Delete Node in a Linked List">0237 Delete Node in a Linked List</a><br>
+<a href="./Algorithm/Simple/0242 Valid Anagram">0242 Valid Anagram</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
