@@ -1,5 +1,4 @@
 //执行用时: 6 ms, 在Add Digits的Java提交中击败了19.51% 的用户
-
 class Solution {
     public int addDigits(int num) {
         do{
@@ -15,5 +14,13 @@ class Solution {
             num /= 10;
         }
         return ans;
+    }
+}
+
+
+//执行用时: 5 ms, 在Add Digits的Java提交中击败了41.10% 的用户
+class Solution {
+    public int addDigits(int num) {
+        return (num - 1) % 9 + 1;   
     }
 }
