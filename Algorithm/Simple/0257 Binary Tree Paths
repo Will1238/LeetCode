@@ -1,3 +1,4 @@
+//解法一
 //执行用时: 51 ms, 在Binary Tree Paths的Java提交中击败了2.96% 的用户
 
 /**
@@ -40,5 +41,44 @@ class Solution {
             return;
         }
         
+    }
+}
+
+//解法二（优化解法）
+//执行用时: 19 ms, 在Binary Tree Paths的Java提交中击败了55.64% 的用户
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    
+    public List<String> binaryTreePaths(TreeNode root) {
+        List<String> paths = new ArrayList<String>();        
+        if (root == null) {
+            return paths;
+        }
+        String path = "";
+        transerval(root, path, paths);
+        return paths;
+    }
+    
+    public void transerval(TreeNode root, String path, List<String> paths) {
+        if (root == null) {
+            return;
+        }
+        if (root.left == null && root.right == null) { 
+            paths.add(path + root.val);
+            return;
+        } 
+        
+        path += root.val + "->";
+        transerval(root.left, path, paths);
+        transerval(root.right, path, paths);
     }
 }
