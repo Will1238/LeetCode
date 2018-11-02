@@ -39,6 +39,7 @@
 <a href="./Algorithm/Simple/0257 Binary Tree Paths">0257 Binary Tree Paths</a><br>
 
 <a href="./Algorithm/Simple/0258 Add Digits">0258 Add Digits</a><br>
+<a href="./Algorithm/Simple/0263 Ugly Number">0263 Ugly Number</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
