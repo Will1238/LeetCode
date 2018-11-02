@@ -1,0 +1,23 @@
+//执行用时: 4 ms, 在Ugly Number的Java提交中击败了45.03% 的用户
+
+class Solution {
+    public boolean isUgly(int num) {
+        if (num <= 0) {
+            return false;
+        }
+        while (num % 2 == 0 && num != 1) {
+            num /= 2;
+        }
+        while (num % 3 == 0 && num != 1) {
+            num /= 3;
+        }
+        while (num % 5 == 0 && num != 1) {
+            num /= 5;
+        } 
+        if (num == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
