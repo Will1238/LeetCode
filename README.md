@@ -44,6 +44,7 @@
 <a href="./Algorithm/Simple/0278 First Bad Version">0278 First Bad Version</a><br>
 <a href="./Algorithm/Simple/0283 Move Zeroes">0283 Move Zeroes</a><br>
 
+<a href="./Algorithm/Simple/0290 Word Pattern">0290 Word Pattern</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
