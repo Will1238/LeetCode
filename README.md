@@ -42,6 +42,8 @@
 <a href="./Algorithm/Simple/0263 Ugly Number">0263 Ugly Number</a><br>
 <a href="./Algorithm/Simple/0268 Missing Number">0268 Missing Number</a><br>
 <a href="./Algorithm/Simple/0278 First Bad Version">0278 First Bad Version</a><br>
+<a href="./Algorithm/Simple/0283 Move Zeroes">0283 Move Zeroes</a><br>
+
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
