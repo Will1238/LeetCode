@@ -48,8 +48,9 @@
 <a href="./Algorithm/Simple/0292 Nim Game">0292 Nim Game</a><br>
 <a href="./Algorithm/Simple/0303 Range Sum Query">0303 Range Sum Query</a><br>
 <a href="./Algorithm/Simple/0326 Power of Three">0326 Power of Three</a><br>
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0342 Power of Four0342 Power of Four">0342 Power of Four</a><br>
 
+<a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
 ### <span id="amiddle">Algorithm && Middle</span>
