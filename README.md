@@ -47,9 +47,10 @@
 <a href="./Algorithm/Simple/0290 Word Pattern">0290 Word Pattern</a><br>
 <a href="./Algorithm/Simple/0292 Nim Game">0292 Nim Game</a><br>
 <a href="./Algorithm/Simple/0303 Range Sum Query">0303 Range Sum Query</a><br>
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0326 Power of Three">0326 Power of Three</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
+<a href="./Algorithm/Simple/"></a><br>
 
 ### <span id="amiddle">Algorithm && Middle</span>
 <a href="./Algorithm/Middle/0002 Add Two Numbers">0002 Add Two Numbers</a><br>
