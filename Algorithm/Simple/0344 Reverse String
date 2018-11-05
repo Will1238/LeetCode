@@ -1,0 +1,17 @@
+//执行用时: 5 ms, 在Reverse String的Java提交中击败了40.55% 的用户
+class Solution {
+    public String reverseString(String s) {
+        if (s == null || s.length() == 0) {
+            return s;
+        }
+        char[] cs = s.toCharArray();
+        char c;
+        for (int i = 0; i < cs.length/2; i++) {
+            c = cs[cs.length - i - 1];
+            cs[cs.length - i - 1] = cs[i];
+            cs[i] = c;
+        }
+        
+        return new String(cs);
+    }
+}
