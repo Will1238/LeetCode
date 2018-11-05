@@ -53,7 +53,7 @@
 <a href="./Algorithm/Simple/0344 Reverse String">0344 Reverse String</a><br>
 <a href="./Algorithm/Simple/0345 Reverse Vowels of a String">0345 Reverse Vowels of a String</a><br>
 <a href="./Algorithm/Simple/0349 Intersection of Two Arrays">0349 Intersection of Two Arrays</a><br>
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0350 Intersection of Two Arrays II">0350 Intersection of Two Arrays II</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
 <a href="./Algorithm/Simple/"></a><br>
