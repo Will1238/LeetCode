@@ -50,7 +50,7 @@
 <a href="./Algorithm/Simple/0326 Power of Three">0326 Power of Three</a><br>
 <a href="./Algorithm/Simple/0342 Power of Four">0342 Power of Four</a><br>
 
-<a href="./Algorithm/Simple/0344 Reverse String"><0344 Reverse String/a><br>
+<a href="./Algorithm/Simple/0344 Reverse String">0344 Reverse String</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
