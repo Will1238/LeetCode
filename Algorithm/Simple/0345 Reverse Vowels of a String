@@ -1,0 +1,40 @@
+//执行用时: 5 ms, 在Reverse Vowels of a String的Java提交中击败了84.43% 的用户
+class Solution {
+    public String reverseVowels(String s) {
+        if (s == null || s.length() == 0) {
+            return s;
+        }
+        char[] ch = s.toCharArray();
+        char c;
+        int left = 0, right = ch.length - 1;
+        while (left < right) {
+            while (left < right &&
+                  ch[left] != 'a' && ch[left] != 'A' &&
+                  ch[left] != 'e' && ch[left] != 'E' &&
+                  ch[left] != 'i' && ch[left] != 'I' &&
+                  ch[left] != 'o' && ch[left] != 'O' &&
+                  ch[left] != 'u' && ch[left] != 'U') {
+                left++;
+            }
+            
+            while (left < right &&
+                  ch[right] != 'a' && ch[right] != 'A' &&
+                  ch[right] != 'e' && ch[right] != 'E' &&
+                  ch[right] != 'i' && ch[right] != 'I' &&
+                  ch[right] != 'o' && ch[right] != 'O' &&
+                  ch[right] != 'u' && ch[right] != 'U') {
+                right--;
+            }
+            
+            if (left < right) {
+                c = ch[left];
+                ch[left] = ch[right];
+                ch[right] = c;
+                
+                left++;
+                right--;
+            }
+        }
+        return String.valueOf(ch);
+    }
+}
