@@ -56,7 +56,7 @@
 <a href="./Algorithm/Simple/0350 Intersection of Two Arrays II">0350 Intersection of Two Arrays II</a><br>
 <a href="./Algorithm/Simple/0367 Valid Perfect Square">0367 Valid Perfect Square</a><br>
 
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0374 Guess Number Higher or Lower">0374 Guess Number Higher or Lower</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
