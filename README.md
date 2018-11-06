@@ -57,9 +57,11 @@
 <a href="./Algorithm/Simple/0367 Valid Perfect Square">0367 Valid Perfect Square</a><br>
 
 <a href="./Algorithm/Simple/0374 Guess Number Higher or Lower">0374 Guess Number Higher or Lower</a><br>
+<a href="./Algorithm/Simple/0383 Ransom Note">0383 Ransom Note</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
+
 <a href="./Algorithm/Simple/"></a><br>
 
 ### <span id="amiddle">Algorithm && Middle</span>
