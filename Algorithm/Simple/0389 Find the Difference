@@ -17,3 +17,27 @@ class Solution {
         return 'x';
     }
 }
+
+
+//改进：事实证明字符数组快很多
+//执行用时: 7 ms, 在Find the Difference的Java提交中击败了76.01% 的用户
+class Solution {
+    public char findTheDifference(String s, String t) {
+        int[] chars = new int[256];
+        int[] chart = new int[256];
+        char[] a = s.toCharArray();
+        char[] b = t.toCharArray();
+        for (int i = 0; i < a.length; i++) {
+            chars[a[i]]++;
+        }
+        for (int i = 0; i < b.length; i++) {
+            chart[b[i]]++;
+        }
+        for (char i = 'a'; i <= 'z'; i++) {
+            if (chars[i] != chart[i]) {
+                return i;
+            }
+        }
+        return 'x';
+    }
+}
