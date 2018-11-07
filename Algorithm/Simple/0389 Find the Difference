@@ -1,0 +1,19 @@
+//执行用时: 8 ms, 在Find the Difference的Java提交中击败了63.51% 的用户
+class Solution {
+    public char findTheDifference(String s, String t) {
+        int[] chars = new int[256];
+        int[] chart = new int[256];
+        for (int i = 0; i < s.length(); i++) {
+            chars[s.charAt(i)]++;
+        }
+        for (int i = 0; i < t.length(); i++) {
+            chart[t.charAt(i)]++;
+        }
+        for (char i = 'a'; i <= 'z'; i++) {
+            if (chars[i] != chart[i]) {
+                return i;
+            }
+        }
+        return 'x';
+    }
+}
