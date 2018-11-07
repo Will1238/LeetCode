@@ -1,0 +1,39 @@
+//执行用时: 5 ms, 在Nth Digit的Java提交中击败了72.05% 的用户
+class Solution {
+    public int findNthDigit(int n) {
+        if (n <= 9) {
+            return n;
+        }
+        int nTen = 1;
+        int x = n - 9;
+        while (x > 0 && nTen < 8){  //(nTen >= 8)时additon超出int范围
+            int addition = 9 * powofTen(nTen) * (nTen + 1);
+            if (x <= addition) {
+                break;
+            } else {
+                x -= addition;
+                nTen++;
+            }    
+        }
+        
+        int i = x % (nTen + 1);
+        int j = x / (nTen + 1);
+        int ans = j + powofTen(nTen);
+        if (i == 0) {
+            ans--;
+            ans = ans % 10;
+        } else {
+            ans = (ans/powofTen(nTen - i + 1)) % 10; 
+        }
+        
+        return ans;
+    }
+    
+    public int powofTen(int nTen) {
+        int pow = 1;
+        for (int i = 0; i < nTen; i++) {
+            pow *= 10;
+        }
+        return pow;
+    }
+}
