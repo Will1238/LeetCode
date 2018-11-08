@@ -1,0 +1,43 @@
+//执行用时: 11 ms, 在Convert a Number to Hexadecimal的Java提交中击败了32.70% 的用户
+class Solution {
+    public String toHex(int num) {
+        if (num < 10 && num >=0) {
+            return ""+num;
+        }
+        long Num = (long)num;
+        if (num < 0) {
+            Num += 4294967296L;
+        }
+        System.out.println(Num);
+        String ans = "";
+        long n = 16L;  //上限
+        int x = 4;  //上限的二进制位
+        while (Num >= n) {
+            n *= 16L;
+            x += 4;
+        }
+        //1111(2)
+        int mask = 15;
+        for (int i = 4; i <= x; i += 4) {
+            long t = Num&mask;
+            t >>= i - 4;
+            if (t < 10) {
+                ans = t + ans;
+            } else if (t == 10) {
+                ans = "a" + ans;
+            } else if (t == 11) {
+                ans = "b" + ans;
+            } else if (t == 12) {
+                ans = "c" + ans;
+            } else if (t == 13) {
+                ans = "d" + ans;
+            } else if (t == 14) {
+                ans = "e" + ans;
+            } else if (t == 15) {
+                ans = "f" + ans;
+            }
+            mask <<= 4;
+        }
+        return ans;
+    }
+}
