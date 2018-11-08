@@ -1,0 +1,36 @@
+//执行用时: 8 ms, 在Sum of Left Leaves的Java提交中击败了57.97% 的用户
+/*思路：在遍历时添加一个变量，通过该变量判断当前结点是左孩子还是右孩子*/
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public int sum;
+    public int sumOfLeftLeaves(TreeNode root) {
+        if (root == null) {
+            return sum;
+        }
+        transerval(root.left, 0);
+        transerval(root.right, 1);
+        return sum;
+    }
+    
+    public void transerval(TreeNode root, int flag) {
+        if (root == null) {
+            return;
+        }
+        if (root.left == null && root.right == null) {
+            if (flag == 0) {
+                sum += root.val;
+            }
+            return;
+        }
+        transerval(root.left, 0);
+        transerval(root.right, 1);
+    }
+}
