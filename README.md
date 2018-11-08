@@ -64,6 +64,12 @@
 
 <a href="./Algorithm/Simple/0401 Binary Watch">[Unfinished]0401 Binary Watch</a><br>
 <a href="./Algorithm/Simple/0404 Sum of Left Leaves">0404 Sum of Left Leaves</a><br>
+<a href="./Algorithm/Simple/0405 Convert a Number to Hexadecimal">0405 Convert a Number to Hexadecimal</a><br>
+<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/"></a><br>
+
+<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
