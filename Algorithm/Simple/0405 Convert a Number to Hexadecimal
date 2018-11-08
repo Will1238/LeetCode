@@ -41,3 +41,37 @@ class Solution {
         return ans;
     }
 }
+
+
+//改进：负数本身便是按照补码存储，无需再次取补，【无符号】移位即可
+//执行用时: 7 ms, 在Convert a Number to Hexadecimal的Java提交中击败了85.40% 的用户
+class Solution {
+    public String toHex(int num) {
+        if (num < 10 && num >=0) {
+            return ""+num;
+        }
+        String ans = "";
+        //1111(2)
+        int mask = 15;
+        while (num != 0) {
+            int t = num&mask;
+            if (t < 10) {
+                ans = t + ans;
+            } else if (t == 10) {
+                ans = "a" + ans;
+            } else if (t == 11) {
+                ans = "b" + ans;
+            } else if (t == 12) {
+                ans = "c" + ans;
+            } else if (t == 13) {
+                ans = "d" + ans;
+            } else if (t == 14) {
+                ans = "e" + ans;
+            } else if (t == 15) {
+                ans = "f" + ans;
+            }
+            num >>>= 4;
+        }
+        return ans;
+    }
+}
