@@ -62,7 +62,7 @@
 <a href="./Algorithm/Simple/0389 Find the Difference">0389 Find the Difference</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0404 Sum of Left Leaves">0404 Sum of Left Leaves</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
