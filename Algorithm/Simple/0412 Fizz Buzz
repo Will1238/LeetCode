@@ -1,0 +1,23 @@
+//执行用时: 5 ms, 在Fizz Buzz的Java提交中击败了57.19% 的用户
+/*
+分析：显然，最直接的方法是遍历，如果同时是3和5的倍数则添加字符串“FizzBuzz”
+如果是3的倍数则添加字符串“Fizz”，是5的倍数则添加“Buzz”
+如果都不是，则直接太添加数字
+*/
+class Solution {
+    public List<String> fizzBuzz(int n) {
+        List<String> ans = new ArrayList<String>();
+        for (int i = 1; i <= n; i++) {
+            if (i % 15 == 0) {
+                ans.add("FizzBuzz");
+            } else if (i % 3 == 0) {
+                ans.add("Fizz");
+            } else if (i % 5 == 0) {
+                ans.add("Buzz");
+            } else {
+                ans.add(""+i);
+            }
+        }
+        return ans;
+    }
+}
