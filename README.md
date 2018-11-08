@@ -60,10 +60,10 @@
 <a href="./Algorithm/Simple/0383 Ransom Note">0383 Ransom Note</a><br>
 <a href="./Algorithm/Simple/0387 First Unique Character in a String">0387 First Unique Character in a String</a><br>
 <a href="./Algorithm/Simple/0389 Find the Difference">0389 Find the Difference</a><br>
-<a href="./Algorithm/Simple/0401 Binary Watch">[Unfinished]0401 Binary Watch</a><br>
+<a href="./Algorithm/Simple/0400 Nth Digit">0400 Nth Digit</a><br>
 
+<a href="./Algorithm/Simple/0401 Binary Watch">[Unfinished]0401 Binary Watch</a><br>
 <a href="./Algorithm/Simple/0404 Sum of Left Leaves">0404 Sum of Left Leaves</a><br>
-<a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
