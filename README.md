@@ -68,13 +68,13 @@
 <a href="./Algorithm/Simple/0409 Longest Palindrome">0409 Longest Palindrome</a><br>
 <a href="./Algorithm/Simple/0412 Fizz Buzz">0412 Fizz Buzz</a><br>
 
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0414 Third Maximum Number">0414 Third Maximum Number</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
-### <span id="amiddle">Algorithm && Middle</span>
+### <a id="amiddle" href="./Algorithm/Middle">Algorithm && Middle</an>
 <a href="./Algorithm/Middle/0002 Add Two Numbers">0002 Add Two Numbers</a><br>
 <a href="./Algorithm/Middle/"></a><br>
 <a href="./Algorithm/Middle/"></a><br>
