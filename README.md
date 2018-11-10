@@ -69,6 +69,12 @@
 <a href="./Algorithm/Simple/0412 Fizz Buzz">0412 Fizz Buzz</a><br>
 
 <a href="./Algorithm/Simple/0414 Third Maximum Number">0414 Third Maximum Number</a><br>
+<a href="./Algorithm/Simple/0415 Add Strings">0415 Add Strings</a><br>
+<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/"></a><br>
+
+<a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
