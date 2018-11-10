@@ -1,0 +1,53 @@
+/*
+分析：类似于链表加法，更加简单，只要按位相加，补不足，适当进位即可。
+*/
+//执行用时: 33 ms, 在Add Strings的Java提交中击败了58.16% 的用户
+class Solution {
+    public String addStrings(String num1, String num2) {
+        char[] n1 = num1.toCharArray();
+        char[] n2 = num2.toCharArray();
+        String ans = "";
+        int addtion = 0;
+        int x = 0;
+        int i = n1.length - 1, j = n2.length - 1;
+        while (i >= 0 && j >= 0) {
+                x = n1[i] + n2[j] + addtion - 2 * '0';
+                if (x >= 10) {
+                    addtion = 1;
+                    x -= 10;
+                } else {
+                    addtion = 0;
+                }
+                ans = x + ans;
+                i--;
+                j--;
+        }
+
+        while (i >= 0) {
+            x = n1[i] + addtion - '0';
+            if (x >= 10) {
+                addtion = 1;
+                x -= 10;
+            } else {
+                addtion = 0;
+            }
+            ans = x + ans;
+            i--;
+        }
+        while (j >= 0) {
+            x = n2[j] + addtion - '0';
+            if (x >= 10) {
+                addtion = 1;
+                x -= 10;
+            } else {
+                addtion = 0;
+            }
+            ans = x + ans;
+            j--;
+        }
+        if (addtion == 1) {
+            ans = addtion + ans;
+        }
+        return ans;
+    }
+}
