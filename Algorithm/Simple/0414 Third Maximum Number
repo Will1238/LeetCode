@@ -19,3 +19,60 @@ class Solution {
         return count == 0 ? ans : nums[nums.length - 1];
     }
 }
+
+
+//解法二：时间复杂度O(n)的解法
+/*
+分析：通过顺序遍历分别获得数组的最大，次大和第三大的数，一次遍历即可得到答案，时间复杂度O(n)
+需要注意的地方：考虑存储数组最大次大和第三大的数的数组Nums的初值难以使用合适的值（如果使用数组nums[0]作为初值，
+    当nums[0]为数组最大值时答案错误，因此添加辅助标记数组flags，标记数组同时也解决了数组中没有三个不同的数字的问题。
+*/
+//执行用时: 3 ms, 在Third Maximum Number的Java提交中击败了97.25% 的用户
+class Solution {
+    public int thirdMax(int[] nums) {
+        int[] Nums = new int[3];
+        boolean[] flags = new boolean[3];
+        
+        for (int i = 0; i < nums.length; i++) {
+            if (!flags[0]) {
+                Nums[0] = nums[i];
+                flags[0] = true;
+            } else if (nums[i] > Nums[0]) {
+                if (flags[1]) {
+                    Nums[2] = Nums[1];
+                    flags[2] = true;
+                    Nums[1] = Nums[0];
+                } else {
+                    Nums[1] = Nums[0];
+                    flags[1] = true;
+                }
+                Nums[0] = nums[i];
+            } else if (!flags[1]) {
+                if (nums[i] < Nums[0]) {
+                    Nums[1] = nums[i];
+                    flags[1] = true;                    
+                }
+
+            } else if (nums[i] > Nums[1]) {
+                if (nums[i] != Nums[0]) {
+                    Nums[2] = Nums[1];
+                    Nums[1] = nums[i];
+                    if (!flags[2]) {
+                        flags[2] = true;
+                    }                    
+                }
+            } else if (!flags[2]) {
+                if (nums[i] < Nums[1]) {
+                    Nums[2] = nums[i];
+                    flags[2] = true;                    
+                }
+            } else if (nums[i] > Nums[2]) {
+                if (nums[i] != Nums[1]) {
+                    Nums[2] = nums[i];
+                }
+            }
+        }
+        
+        return flags[2] ? Nums[2] : Nums[0];
+    }
+}
