@@ -1,0 +1,62 @@
+/*
+解析：递归，分治
+*/
+//执行用时: 4 ms, 在Construct Quad Tree的Java提交中击败了76.92% 的用户
+/*
+// Definition for a QuadTree node.
+class Node {
+    public boolean val;
+    public boolean isLeaf;
+    public Node topLeft;
+    public Node topRight;
+    public Node bottomLeft;
+    public Node bottomRight;
+
+    public Node() {}
+
+    public Node(boolean _val,boolean _isLeaf,Node _topLeft,Node _topRight,Node _bottomLeft,Node _bottomRight) {
+        val = _val;
+        isLeaf = _isLeaf;
+        topLeft = _topLeft;
+        topRight = _topRight;
+        bottomLeft = _bottomLeft;
+        bottomRight = _bottomRight;
+    }
+};
+*/
+class Solution {
+    public Node construct(int[][] grid) {
+        if (grid == null) {
+            return null;
+        }
+        return recursion(grid, 0, grid[0].length, 0, grid.length,new Node());
+    }
+
+    public Node recursion(int[][] grid, int left, int right, int top, int bottom, Node root) {
+        root = new Node();
+        int flag = grid[top][left];
+        boolean isSame = true;
+        for (int i = top; i < bottom; i++) {
+            for (int j = left; j < right; j++) {
+                if (grid[i][j] != flag) {
+                    isSame = false;
+                    break;
+                }
+            }
+            if (!isSame) {
+                break;
+            }
+        }
+        if (isSame) {
+            root.val = flag == 1 ? true : false;
+            root.isLeaf = true;
+            return root;
+        } else {
+            root.topLeft = recursion(grid, left, (left + right)/2, top, (top + bottom)/2, root.topLeft);
+            root.topRight = recursion(grid, (left + right)/2, right, top, (top + bottom)/2, root.topRight);
+            root.bottomLeft = recursion(grid, left, (left + right)/2, (top + bottom)/2, bottom, root.bottomLeft);
+            root.bottomRight = recursion(grid, (left + right)/2, right, (top + bottom)/2, bottom, root.bottomRight);
+            return root;
+        }
+    }
+}
