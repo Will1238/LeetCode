@@ -1,0 +1,27 @@
+/*
+分析：本题很简单，之需按序遍历一遍即可，以空格作为分隔符，时间复杂度O(n)
+*/
+//执行用时: 1 ms, 在Number of Segments in a String的Java提交中击败了100.00% 的用户
+class Solution {
+    public int countSegments(String s) {
+        if (s == null) {
+            return 0;
+        }
+        char[] str = s.toCharArray();
+        int count = 0;
+        boolean flag = false;
+        for (int i = 0; i < str.length; i++) {
+            if (str[i] != ' ') {
+                if (!flag) {
+                    flag = true;
+                    count++;
+                } 
+            } else {
+                if (flag) {
+                    flag = false;
+                }
+            }
+        }
+        return count;
+    }
+}
