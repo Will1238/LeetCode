@@ -71,7 +71,7 @@
 <a href="./Algorithm/Simple/0414 Third Maximum Number">0414 Third Maximum Number</a><br>
 <a href="./Algorithm/Simple/0415 Add Strings">0415 Add Strings</a><br>
 <a href="./Algorithm/Simple/0427 Construct Quad Tree">0427 Construct Quad Tree</a><br>
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0429 N-ary Tree Level Order Traversal">0429 N-ary Tree Level Order Traversal</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 
 <a href="./Algorithm/Simple/"></a><br>
