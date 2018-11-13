@@ -1,0 +1,12 @@
+//执行用时: 62 ms, 在Arranging Coins的Java提交中击败了35.86% 的用户
+class Solution {
+    public int arrangeCoins(int n) {
+        int i = 1;
+        while (n > 0) {
+            n -= i;
+            i++;
+        }
+        
+        return (n == 0) ? (i - 1) : (i - 2);
+    }
+}
