@@ -1,0 +1,35 @@
+//解法一
+//执行用时: 380 ms, 在Find All Anagrams in a String的Java提交中击败了25.54% 的用户
+class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+        char[] strP = p.toCharArray();
+        char[] strS = s.toCharArray();
+        int[] chS = new int[256];
+        int[] chP = new int[256];
+        List<Integer> ans = new ArrayList<Integer>();
+        
+        for (int i = 0; i < strP.length; i++) {
+            chP[strP[i]]++;
+        }
+        for (int i = 0; i <= strS.length - strP.length; i++) {
+            boolean flag = true;
+            for (char j = 'a'; j <= 'z'; j++) {
+                chS[j] = 0;
+            }
+            for (int j = i; j < i + strP.length; j++) {
+                chS[strS[j]]++;
+            }
+            for (char j = 'a'; j <= 'z'; j++) {
+                if (chS[j] != chP[j]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) {
+                ans.add(i);
+            }
+        }
+        
+        return ans;
+    }
+}
