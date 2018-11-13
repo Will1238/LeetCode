@@ -1,0 +1,43 @@
+/*
+分析：递归，对每个结点递归地调用函数计算是否有满足条件的分支。
+*/
+//执行用时: 27 ms, 在Path Sum III的Java提交中击败了69.48% 的用户
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    int count = 0;
+    public int pathSum(TreeNode root, int sum) {
+        tranversal(root, sum);
+        pathTranversal(root, sum);
+        return count;
+    }
+    public void pathTranversal(TreeNode root, int sum) {
+        if (root == null) {
+            return;
+        }
+        tranversal(root.left, sum);
+        tranversal(root.right, sum);
+        pathTranversal(root.left, sum);
+        pathTranversal(root.right, sum);
+    }
+    public void tranversal(TreeNode root, int rSum) {
+        if (root == null) {
+            return;
+        }
+        rSum -= root.val;
+
+        if (rSum == 0) {
+            count++;
+        }
+        tranversal(root.left, rSum);
+        tranversal(root.right, rSum);
+        
+    }
+}
