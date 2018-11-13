@@ -33,3 +33,45 @@ class Solution {
         return ans;
     }
 }
+
+
+//解法二（优化解法）
+//执行用时: 8 ms, 在Find All Anagrams in a String的Java提交中击败了100.00% 的用户
+/*
+解析：和解法一思路类似，但是每次指针只向后移动一位，故移动之后只需要使第i-1个字符对应的字符计数减一，再使第(i - 1 + p.length())个字符加一即可
+*/
+class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+        List<Integer> ans = new ArrayList<Integer>();
+        if (s == null || s.length() == 0 || s.length() < p.length()) {
+            return ans;
+        } 
+        char[] strP = p.toCharArray();
+        char[] strS = s.toCharArray();
+        int[] chS = new int[123];
+        int[] chP = new int[123];
+
+        for (int i = 0; i < strP.length; i++) {
+            chP[strP[i]]++;
+            chS[strS[i]]++;
+        }
+        for (int i = 0; i <= strS.length - strP.length; i++) {
+            boolean flag = true;
+            if (i > 0) {
+                chS[strS[i - 1]]--;
+                chS[strS[i - 1 + strP.length]]++;
+            }
+            for (char j = 'a'; j <= 'z'; j++) {
+                if (chS[j] != chP[j]) {
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag) {
+                ans.add(i);
+            }
+        }
+        
+        return ans;
+    }
+}
