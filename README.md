@@ -78,7 +78,7 @@
 <a href="./Algorithm/Simple/0438 Find All Anagrams in a String">0438 Find All Anagrams in a String</a><br>
 <a href="./Algorithm/Simple/0441 Arranging Coins">0441 Arranging Coins</a><br>
 <a href="./Algorithm/Simple/0443 String Compression">0443 String Compression</a><br>
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0447 Number of Boomerangs">0447 Number of Boomerangs</a><br>
 
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
