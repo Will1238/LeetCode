@@ -1,0 +1,32 @@
+//执行用时: 9 ms, 在String Compression的Java提交中击败了58.72% 的用户
+/*
+分析：顺序遍历，暴力搜索。
+*/
+class Solution {
+    public int compress(char[] chars) {
+        int count = 0;
+        int length = 0;
+        char c;
+        for (int i = 0; i < chars.length; i++) {
+            c = chars[i];
+            count = 0;
+            
+            while (i < chars.length && chars[i] == c) {
+                i++;
+                count++;
+            }
+            i--;
+            
+            chars[length] = c;
+            length++;            
+            if (count > 1) {
+                String s = String.valueOf(count);
+                for (int j = 0; j < s.length(); j++) {
+                    chars[length] = s.charAt(j);
+                    length++;
+                }
+            }
+        }
+        return length;
+    }
+}
