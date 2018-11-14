@@ -1,3 +1,7 @@
+//解法一
+/*
+分析：暴力搜索，顺序遍历，时间复杂度O(n)
+*/
 //执行用时: 62 ms, 在Arranging Coins的Java提交中击败了35.86% 的用户
 class Solution {
     public int arrangeCoins(int n) {
@@ -8,5 +12,34 @@ class Solution {
         }
         
         return (n == 0) ? (i - 1) : (i - 2);
+    }
+}
+
+//解法二
+/*
+分析：分治，时间优化到O(logn)
+*/
+//执行用时: 23 ms, 在Arranging Coins的Java提交中击败了100.00% 的用户
+class Solution {
+    public int arrangeCoins(int n) {
+        long start = 1L, end = (long)n, mid = 0L;
+        while (start <= end) {
+            mid = (start + end)/2;
+            long temp = mid * (mid + 1) / 2;
+            long tempLeft = mid * (mid - 1) / 2;
+            if ( temp == n) {
+                return (int)mid;
+            } else if (temp > n) {
+                if (tempLeft <= n) {
+                    return (int)(mid - 1);
+                } else {
+                    end = mid - 1;                    
+                }
+            } else {
+                start = mid + 1;
+            }
+        }
+        
+        return (int)mid;
     }
 }
