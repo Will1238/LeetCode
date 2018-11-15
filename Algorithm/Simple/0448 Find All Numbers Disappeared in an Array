@@ -1,0 +1,21 @@
+//执行用时: 7 ms, 在Find All Numbers Disappeared in an Array的Java提交中击败了100.00% 的用户
+class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        List<Integer> ans = new ArrayList<Integer>();
+        if (nums == null || nums.length == 0) {
+            return ans;
+        }
+        int[] x = new int[nums.length + 1];
+        
+        for (int i = 0; i < nums.length; i++) {
+            x[nums[i]]++;
+        }
+        for (int i = 1; i < x.length; i++) {
+            if (x[i] == 0) {
+                ans.add(i);
+            }
+        }
+        
+        return ans;
+    }
+}
