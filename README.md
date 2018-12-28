@@ -82,6 +82,12 @@
 
 <a href="./Algorithm/Simple/0448 Find All Numbers Disappeared in an Array">0448 Find All Numbers Disappeared in an Array</a><br>
 <a href="./Algorithm/Simple/0455 Assign Cookies">0455 Assign Cookies</a><br>
+<a href="./Algorithm/Simple/0458 Poor Pigs">0458 Poor Pigs</a><br>
+<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/"></a><br>
+
+<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
