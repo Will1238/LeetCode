@@ -1,0 +1,14 @@
+//我的提交执行用时已经战胜 64.71 % 的 java 提交记录
+class Solution {
+    public int hammingDistance(int x, int y) {
+        int count = 0;
+        while (x > 0 || y > 0) {
+            if ((x&1) != (y&1)) {
+                count++;
+            }
+            x >>= 1;
+            y >>= 1;
+        }
+        return count;
+    }
+}
