@@ -86,7 +86,7 @@
 <a href="./Algorithm/Simple/0459 Repeated Substring Pattern">0459 Repeated Substring Pattern</a><br>
 <a href="./Algorithm/Simple/0461 Hamming Distance">0461 Hamming Distance</a><br>
 
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0453 Minimum Moves to Equal Array Elements">0453 Minimum Moves to Equal Array Elements</a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
