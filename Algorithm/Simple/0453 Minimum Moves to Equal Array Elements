@@ -1,0 +1,11 @@
+//我的提交执行用时已经战胜 11.73 % 的 java 提交记录
+class Solution {
+    public int minMoves(int[] nums) {
+        Arrays.sort(nums);
+        int count = 0;
+        for (int i = 1; i < nums.length; i++) {
+            count += nums[i] - nums[0];
+        }
+        return count;
+    }
+}
