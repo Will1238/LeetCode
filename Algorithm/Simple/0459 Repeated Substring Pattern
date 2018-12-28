@@ -1,0 +1,28 @@
+//我的提交执行用时已经战胜 92.52 % 的 java 提交记录
+class Solution {
+    public boolean repeatedSubstringPattern(String s) {
+        char[] ch = s.toCharArray();
+        for (int i = 1; i < ch.length/2 + 1; i++) {
+            if (ch.length%i != 0) {
+                continue;
+            } else {
+                boolean isPattern = true;
+                for (int j = i; j < ch.length; j += i) {
+                    for (int k = 0; k < i; k++) {
+                        if (ch[k] != ch[j+k]) {
+                            isPattern = false;
+                            break;
+                        }
+                    }
+                    if (!isPattern) {
+                        break;
+                    }
+                }
+                if (isPattern) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
