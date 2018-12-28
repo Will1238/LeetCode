@@ -84,7 +84,7 @@
 <a href="./Algorithm/Simple/0455 Assign Cookies">0455 Assign Cookies</a><br>
 <a href="./Algorithm/Simple/0458 Poor Pigs">0458 Poor Pigs</a><br>
 <a href="./Algorithm/Simple/0459 Repeated Substring Pattern">0459 Repeated Substring Pattern</a><br>
-<a href="./Algorithm/Simple/"></a><br>
+<a href="./Algorithm/Simple/0461 Hamming Distance">0461 Hamming Distance</a><br>
 
 <a href="./Algorithm/Simple/"></a><br>
 <a href="./Algorithm/Simple/"></a><br>
